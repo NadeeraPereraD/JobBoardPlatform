@@ -1,10 +1,9 @@
 import "./App.css";
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid2";
-import Navbar from "./layouts/Navbar";
+import Navbars from "./layouts/Navbars";
 
 function App() {
   const Item = styled(Paper)(({ theme }) => ({
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <div >
-      <Navbar/>
+      <Navbars/>
       <Grid container spacing={2}>
         <Grid size={8}>
           <Item>size=8</Item>
