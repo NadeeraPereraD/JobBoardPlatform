@@ -1,28 +1,24 @@
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import LinkButtons from "../components/LinkButtons";
-import TextFields from "../components/TextFields";
-import "./login.css";
-
-export default function Login() {
-  return (
+<Box>
+  <Grid container spacing={2} style={{ height: "84vh", marginTop: "10px" }}>
+    <Grid size={2}></Grid>
+    <Grid size={8} style={{ height: "100%", backgroundColor: "yellow" }}>
     <div
       className="modal show"
       style={{ display: "block", position: "initial" }}
     >
       <Modal.Dialog>
-        <Modal.Header style={{ backgroundColor: "#b2191e", borderBottom: 'none' }} closeButton>
-          <Modal.Title style={{ color: "#FFFFFF" }}>Login</Modal.Title>
+        <Modal.Header style={{ backgroundColor: "#FFFFFF", borderBottom: 'none' }} closeButton>
+          <Modal.Title style={{ color: "#000000" }}>Sign Up</Modal.Title>
         </Modal.Header>
 
-        <Modal.Body style={{ backgroundColor: "#b2191e"}}>
+        <Modal.Body style={{ backgroundColor: "#FFFFFF"}}>
           <TextFields id="outlined-basic" label="Email" type="email"/>
           <TextFields id="outlined-password-input" label="Password" type="password" autoComplete="current-password"/>
         </Modal.Body>
 
-        <Modal.Footer style={{ backgroundColor: "#b2191e", borderTop: 'none'}}>
-          <Button variant="light" style={{color: "#b2191e", fontWeight:'bold'}}>Close</Button>
-          <Button variant="light" style={{color: "#b2191e", fontWeight:'bold'}}>Login</Button>
+        <Modal.Footer style={{ backgroundColor: "#FFFFFF", borderTop: 'none'}}>
+          <Button variant="light" style={{color: "#F5F5F5", fontWeight:'bold'}}>Close</Button>
+          <Button variant="light" style={{color: "#FFFFFF", fontWeight:'bold'}}>Login</Button>
           <div
             style={{
               width: "100%",
@@ -46,5 +42,7 @@ export default function Login() {
         </Modal.Footer>
       </Modal.Dialog>
     </div>
-  );
-}
+    </Grid>
+    <Grid size={2}></Grid>
+  </Grid>
+</Box>;

@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./navbar.css";
-import NavbarButtons from "../components/NavbarButtons";
+import NavbarButtons from "../../components/NavbarButtons";
 import { Box } from "@mui/material";
 
 export default function Navbars() {
